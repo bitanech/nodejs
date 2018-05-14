@@ -1,7 +1,7 @@
 let Converter = require('./converter.js');
 let https = require('https');
 
-let comission = 10;
+let commission = 10;
 let converter;
 
 https.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3', (res) => {
@@ -20,7 +20,7 @@ https.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3', (r
                 }
             }
 
-            converter = new Converter(buy, sell, comission);
+            converter = new Converter(buy, sell, commission);
             console.log(converter.buyUs(1000));
             console.log(converter.sellUs(1000));
 
