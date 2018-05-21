@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-navigation {
+    display: flex;
+    background-color: #000;
+    height: 63px;
+}
+
+.link {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+    color: #fff;
+    width: 150px;
+}
+
+.link:hover {
+    border-bottom: 4px solid #fff;
+}
+
+.send-form {
+    position: relative;
+    top: 200px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+}
+
+label {
+    padding: 5px 20px;
+    font-family: Ariel;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    outline: #fff;
+    font-family: Ariel;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-family: Ariel;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 50px;
+}
